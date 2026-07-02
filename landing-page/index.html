@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AutoSense — Smart Factory Monitoring</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <span class="logo">⚡ AutoSense</span>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how">How it Works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#signup" class="nav-cta">Get Early Access</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">🚀 Now in Beta — Limited Spots Available</div>
+      <h1>Monitor Your Factory.<br/>React in <span class="highlight">Real Time.</span></h1>
+      <p class="hero-sub">
+        AutoSense connects to your PLCs, sensors, and SCADA systems to give you 
+        live dashboards, instant fault alerts, and predictive maintenance insights — 
+        all from one screen.
+      </p>
+      <div class="hero-cta">
+        <a href="#signup" class="btn-primary">Start Free Trial</a>
+        <a href="#how" class="btn-ghost">See How It Works →</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span>500+</span><p>Factories monitored</p></div>
+        <div class="stat"><span>99.9%</span><p>Uptime guaranteed</p></div>
+        <div class="stat"><span>3 min</span><p>Average setup time</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="countdown-section">
+    <p class="countdown-label">🔥 Beta pricing ends in:</p>
+    <div class="countdown" id="countdown">
+      <div class="time-block"><span id="days">00</span><p>Days</p></div>
+      <div class="time-sep">:</div>
+      <div class="time-block"><span id="hours">00</span><p>Hours</p></div>
+      <div class="time-sep">:</div>
+      <div class="time-block"><span id="minutes">00</span><p>Minutes</p></div>
+      <div class="time-sep">:</div>
+      <div class="time-block"><span id="seconds">00</span><p>Seconds</p></div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section id="features" class="section">
+    <div class="section-inner">
+      <h2>Everything you need to run a smarter factory</h2>
+      <p class="section-sub">No hardware replacements. Works with your existing PLC and sensor setup.</p>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📡</div>
+          <h3>Live PLC Monitoring</h3>
+          <p>Connect directly to Siemens S7, Allen Bradley, and Modbus devices. See real-time I/O status, alarms, and diagnostics.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⚠️</div>
+          <h3>Instant Fault Alerts</h3>
+          <p>Get SMS, email, or WhatsApp notifications the moment a fault is detected — before it causes downtime.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📊</div>
+          <h3>Performance Dashboards</h3>
+          <p>Track OEE, MTBF, MTTR, and energy consumption across all your production lines from one dashboard.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3>Predictive Maintenance</h3>
+          <p>Machine learning models analyze sensor trends to predict failures up to 72 hours before they happen.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Secure & Compliant</h3>
+          <p>End-to-end encrypted data transmission. ISO 27001 certified. Your production data never leaves your region.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Mobile First</h3>
+          <p>Full dashboard access from any phone or tablet. Check your factory floor from anywhere, anytime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="section section-dark">
+    <div class="section-inner">
+      <h2>Up and running in 3 steps</h2>
+      <p class="section-sub">No IT team required. No hardware changes needed.</p>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <h3>Connect your devices</h3>
+          <p>Install our lightweight gateway agent on any Windows or Linux machine connected to your plant network. It auto-discovers PLCs and sensors.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <h3>Configure your dashboard</h3>
+          <p>Drag and drop widgets to build your custom monitoring view. Set alert thresholds, KPI targets, and report schedules.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <h3>Monitor and act</h3>
+          <p>Receive real-time insights, fault predictions, and automated reports. Reduce unplanned downtime by up to 40%.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="section">
+    <div class="section-inner">
+      <h2>Simple, transparent pricing</h2>
+      <p class="section-sub">Start free. Scale as you grow.</p>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Starter</h3>
+          <div class="price">$0<span>/mo</span></div>
+          <ul>
+            <li>✅ Up to 5 devices</li>
+            <li>✅ Basic dashboards</li>
+            <li>✅ Email alerts</li>
+            <li>❌ Predictive maintenance</li>
+            <li>❌ API access</li>
+          </ul>
+          <a href="#signup" class="btn-outline">Get Started Free</a>
+        </div>
+        <div class="pricing-card featured">
+          <div class="popular-badge">Most Popular</div>
+          <h3>Pro</h3>
+          <div class="price">$49<span>/mo</span></div>
+          <ul>
+            <li>✅ Up to 50 devices</li>
+            <li>✅ Full dashboards</li>
+            <li>✅ SMS + WhatsApp alerts</li>
+            <li>✅ Predictive maintenance</li>
+            <li>✅ API access</li>
+          </ul>
+          <a href="#signup" class="btn-primary">Start Free Trial</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Enterprise</h3>
+          <div class="price">Custom</div>
+          <ul>
+            <li>✅ Unlimited devices</li>
+            <li>✅ Custom integrations</li>
+            <li>✅ Dedicated support</li>
+            <li>✅ On-premise option</li>
+            <li>✅ SLA guarantee</li>
+          </ul>
+          <a href="#signup" class="btn-outline">Contact Sales</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGNUP FORM -->
+  <section id="signup" class="section section-dark">
+    <div class="section-inner form-section">
+      <h2>Get Early Access</h2>
+      <p class="section-sub">Join 500+ factories already on the waitlist. No credit card required.</p>
+      <form id="signupForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" placeholder="Collins Kirui"/>
+            <span class="error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="company">Company Name *</label>
+            <input type="text" id="company" placeholder="Acme Manufacturing Ltd"/>
+            <span class="error" id="companyError"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">Work Email *</label>
+            <input type="email" id="email" placeholder="you@company.com"/>
+            <span class="error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="devices">Number of Devices</label>
+            <select id="devices">
+              <option value="">Select range</option>
+              <option>1 – 10</option>
+              <option>11 – 50</option>
+              <option>51 – 200</option>
+              <option>200+</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group full">
+          <label for="message">What are you currently using for monitoring?</label>
+          <textarea id="message" rows="3" placeholder="e.g. manual checks, existing SCADA, nothing yet..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary btn-full" id="submitBtn">
+          Request Early Access →
+        </button>
+        <div id="successMsg" class="success-msg" style="display:none;">
+          ✅ You're on the list! We'll be in touch within 24 hours.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <span class="logo">⚡ AutoSense</span>
+      <p>© 2026 AutoSense Technologies. Built to reduce downtime.</p>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ── COUNTDOWN TIMER ───────────────────────────────────────────────────────
+    const deadline = new Date();
+    deadline.setDate(deadline.getDate() + 14); // 14 days from now
+
+    function updateCountdown() {
+      const now = new Date();
+      const diff = deadline - now;
+      if (diff <= 0) {
+        document.getElementById('countdown').innerHTML = '<p>Offer expired</p>';
+        return;
+      }
+      const days    = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours   = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById('days').textContent    = String(days).padStart(2, '0');
+      document.getElementById('hours').textContent   = String(hours).padStart(2, '0');
+      document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+      document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // ── FORM VALIDATION ───────────────────────────────────────────────────────
+    document.getElementById('signupForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      let valid = true;
+
+      const name    = document.getElementById('name');
+      const company = document.getElementById('company');
+      const email   = document.getElementById('email');
+
+      // Clear previous errors
+      document.querySelectorAll('.error').forEach(el => el.textContent = '');
+      document.querySelectorAll('input').forEach(el => el.classList.remove('input-error'));
+
+      // Name validation
+      if (name.value.trim().length < 2) {
+        document.getElementById('nameError').textContent = 'Please enter your full name.';
+        name.classList.add('input-error');
+        valid = false;
+      }
+
+      // Company validation
+      if (company.value.trim().length < 2) {
+        document.getElementById('companyError').textContent = 'Please enter your company name.';
+        company.classList.add('input-error');
+        valid = false;
+      }
+
+      // Email validation
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email.value.trim())) {
+        document.getElementById('emailError').textContent = 'Please enter a valid email address.';
+        email.classList.add('input-error');
+        valid = false;
+      }
+
+      if (valid) {
+        document.getElementById('submitBtn').textContent = 'Submitting...';
+        document.getElementById('submitBtn').disabled = true;
+        setTimeout(() => {
+          document.getElementById('signupForm').style.display = 'none';
+          document.getElementById('successMsg').style.display = 'block';
+        }, 1200);
+      }
+    });
+  </script>
+
+</body>
+</html>
