@@ -97,6 +97,74 @@
       </div>
     </div>
   </section>
+  <!-- SKILL BARS -->
+<section id="expertise" class="section">
+  <h2>Technical Expertise</h2>
+  <p class="section-sub">Proficiency levels based on coursework and industrial experience.</p>
+  <div class="skill-bars">
+
+    <div class="skill-bar-item">
+      <div class="skill-bar-label">
+        <span>Electrical Fault Diagnosis</span>
+        <span class="skill-percent">90%</span>
+      </div>
+      <div class="skill-bar-track">
+        <div class="skill-bar-fill" data-width="90"></div>
+      </div>
+    </div>
+
+    <div class="skill-bar-item">
+      <div class="skill-bar-label">
+        <span>PLC Programming (TIA Portal)</span>
+        <span class="skill-percent">80%</span>
+      </div>
+      <div class="skill-bar-track">
+        <div class="skill-bar-fill" data-width="80"></div>
+      </div>
+    </div>
+
+    <div class="skill-bar-item">
+      <div class="skill-bar-label">
+        <span>Python Scripting & Automation</span>
+        <span class="skill-percent">75%</span>
+      </div>
+      <div class="skill-bar-track">
+        <div class="skill-bar-fill" data-width="75"></div>
+      </div>
+    </div>
+
+    <div class="skill-bar-item">
+      <div class="skill-bar-label">
+        <span>SCADA Systems (Ignition)</span>
+        <span class="skill-percent">75%</span>
+      </div>
+      <div class="skill-bar-track">
+        <div class="skill-bar-fill" data-width="75"></div>
+      </div>
+    </div>
+
+    <div class="skill-bar-item">
+      <div class="skill-bar-label">
+        <span>Networking & LAN (CCNA)</span>
+        <span class="skill-percent">70%</span>
+      </div>
+      <div class="skill-bar-track">
+        <div class="skill-bar-fill" data-width="70"></div>
+      </div>
+    </div>
+
+    <div class="skill-bar-item">
+      <div class="skill-bar-label">
+        <span>IoT & Embedded Systems</span>
+        <span class="skill-percent">70%</span>
+      </div>
+      <div class="skill-bar-track">
+        <div class="skill-bar-fill" data-width="70"></div>
+      </div>
+    </div>
+
+  </div>
+</section>
 
   <!-- PROJECTS -->
   <section id="projects" class="section section-alt">
@@ -134,6 +202,23 @@
   <footer>
     <p>© 2026 Collins Kipngetich Kirui. Built with HTML & CSS.</p>
   </footer>
+  <script>
+  // Animate skill bars when they scroll into view
+  const fills = document.querySelectorAll('.skill-bar-fill');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const fill = entry.target;
+        const targetWidth = fill.getAttribute('data-width');
+        fill.style.width = targetWidth + '%';
+        observer.unobserve(fill);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  fills.forEach(fill => observer.observe(fill));
+</script>
 
 </body>
 </html>
