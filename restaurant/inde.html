@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Savanna Grill — Nairobi's Finest</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#" class="logo">🌿 Savanna Grill</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reserve">Reserve</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tag">Est. 2018 · Westlands, Nairobi</p>
+      <h1>Where Every Meal<br/>Tells a Story</h1>
+      <p class="hero-sub">Authentic East African cuisine meets modern culinary craft. Fresh ingredients, bold flavours, unforgettable evenings.</p>
+      <div class="hero-btns">
+        <a href="#reserve" class="btn-primary">Reserve a Table</a>
+        <a href="#menu" class="btn-ghost">View Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="about-grid">
+      <div class="about-img">
+        <div class="img-placeholder">
+          <span>🍽️</span>
+          <p>Chef Ibrahim at work</p>
+        </div>
+      </div>
+      <div class="about-text">
+        <p class="section-tag">Our Story</p>
+        <h2>Rooted in East African Tradition</h2>
+        <p>Savanna Grill was born from a simple belief — that food is the most honest expression of culture. Our head chef, Ibrahim Waweru, trained in Addis Ababa, Zanzibar, and Johannesburg before bringing his craft home to Nairobi.</p>
+        <p>Every dish on our menu is built around ingredients sourced within 100km of our kitchen. We work directly with farmers in Limuru, fishermen on the coast, and spice traders in Gikomba.</p>
+        <div class="about-stats">
+          <div><span>6+</span><p>Years serving Nairobi</p></div>
+          <div><span>100%</span><p>Locally sourced</p></div>
+          <div><span>4.9★</span><p>Google rating</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="section section-cream">
+    <div class="section-inner">
+      <p class="section-tag center">Our Menu</p>
+      <h2 class="center">Crafted with Intention</h2>
+      <p class="section-sub center">Seasonal menus change monthly. Ask your server about today's specials.</p>
+
+      <!-- TABS -->
+      <div class="tabs">
+        <button class="tab active" data-tab="starters">Starters</button>
+        <button class="tab" data-tab="mains">Mains</button>
+        <button class="tab" data-tab="desserts">Desserts</button>
+        <button class="tab" data-tab="drinks">Drinks</button>
+      </div>
+
+      <!-- TAB CONTENT -->
+      <div class="tab-content active" id="starters">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Samosa Platter</h3><span class="price">KES 650</span>
+            </div>
+            <p>Crispy beef or vegetable samosas served with tamarind chutney and fresh coriander.</p>
+            <span class="tag">Vegetarian option</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Tilapia Ceviche</h3><span class="price">KES 950</span>
+            </div>
+            <p>Fresh Lake Victoria tilapia, lime juice, red onion, chilli, and coconut milk.</p>
+            <span class="tag">Chef's favourite</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Mutura Board</h3><span class="price">KES 800</span>
+            </div>
+            <p>Traditional Kenyan sausage, sliced and served with kachumbari and ugali crisps.</p>
+            <span class="tag">Local favourite</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Soup of the Day</h3><span class="price">KES 500</span>
+            </div>
+            <p>Ask your server. Always made fresh, always seasonal, always worth it.</p>
+            <span class="tag">Seasonal</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="mains">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Nyama Choma Platter</h3><span class="price">KES 2,400</span>
+            </div>
+            <p>Slow-roasted goat, beef ribs, and chicken served with kachumbari, ugali, and sukuma wiki.</p>
+            <span class="tag">Serves 2</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Swahili Coconut Fish Curry</h3><span class="price">KES 1,650</span>
+            </div>
+            <p>Whole red snapper in a rich coconut, turmeric, and lemongrass curry. Served with pilau rice.</p>
+            <span class="tag">Coastal special</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Injera Feast</h3><span class="price">KES 1,800</span>
+            </div>
+            <p>Ethiopian injera served with doro wat, misir, and tibs. A shared plate for two.</p>
+            <span class="tag">Serves 2</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Grilled Lobster</h3><span class="price">KES 3,200</span>
+            </div>
+            <p>Whole Malindi lobster, charcoal-grilled with garlic butter, lemon, and herbs.</p>
+            <span class="tag">Market price</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="desserts">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Maandazi Beignets</h3><span class="price">KES 450</span>
+            </div>
+            <p>Warm Swahili doughnuts dusted with cardamom sugar, served with mango sorbet.</p>
+            <span class="tag">Vegetarian</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Dark Chocolate Tart</h3><span class="price">KES 650</span>
+            </div>
+            <p>Kenyan dark chocolate ganache tart with sea salt and passionfruit coulis.</p>
+            <span class="tag">Gluten-free option</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="drinks">
+        <div class="menu-grid">
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Dawa Cocktail</h3><span class="price">KES 850</span>
+            </div>
+            <p>Vodka, lime, honey, and crushed ice. Kenya's most famous cocktail, done right.</p>
+            <span class="tag">Signature</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Fresh Passion Juice</h3><span class="price">KES 350</span>
+            </div>
+            <p>Cold-pressed passionfruit, no sugar added. Straight from the Thika farms.</p>
+            <span class="tag">Non-alcoholic</span>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-header">
+              <h3>Kenyan Coffee Flight</h3><span class="price">KES 700</span>
+            </div>
+            <p>Three single-origin Kenyan coffees — Kirinyaga, Nyeri, and Murang'a — served black.</p>
+            <span class="tag">AA Grade</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section">
+    <div class="section-inner">
+      <p class="section-tag center">Gallery</p>
+      <h2 class="center">A Taste of the Experience</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item tall">🥩<p>Nyama Choma</p></div>
+        <div class="gallery-item">🌊<p>Coastal Ambience</p></div>
+        <div class="gallery-item">🌿<p>Fresh Herbs</p></div>
+        <div class="gallery-item wide">🍽️<p>The Main Dining Room</p></div>
+        <div class="gallery-item">☕<p>Kenyan Coffee</p></div>
+        <div class="gallery-item">🎸<p>Live Music Nights</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVATION -->
+  <section id="reserve" class="section section-cream">
+    <div class="section-inner form-wrap">
+      <p class="section-tag center">Reservations</p>
+      <h2 class="center">Book Your Table</h2>
+      <p class="section-sub center">We recommend booking at least 48 hours in advance for weekends.</p>
+      <form id="reserveForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Full Name *</label>
+            <input type="text" id="rName" placeholder="Your name"/>
+            <span class="error" id="rNameErr"></span>
+          </div>
+          <div class="form-group">
+            <label>Phone Number *</label>
+            <input type="tel" id="rPhone" placeholder="+254 7XX XXX XXX"/>
+            <span class="error" id="rPhoneErr"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Date *</label>
+            <input type="date" id="rDate"/>
+            <span class="error" id="rDateErr"></span>
+          </div>
+          <div class="form-group">
+            <label>Time *</label>
+            <select id="rTime">
+              <option value="">Select time</option>
+              <option>12:00 PM</option>
+              <option>1:00 PM</option>
+              <option>2:00 PM</option>
+              <option>6:00 PM</option>
+              <option>7:00 PM</option>
+              <option>8:00 PM</option>
+              <option>9:00 PM</option>
+            </select>
+            <span class="error" id="rTimeErr"></span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Number of Guests *</label>
+            <select id="rGuests">
+              <option value="">Select</option>
+              <option>1</option><option>2</option><option>3</option>
+              <option>4</option><option>5</option><option>6+</option>
+            </select>
+            <span class="error" id="rGuestsErr"></span>
+          </div>
+          <div class="form-group">
+            <label>Special Requests</label>
+            <input type="text" id="rRequests" placeholder="Allergies, anniversary, etc."/>
+          </div>
+        </div>
+        <button type="submit" class="btn-primary btn-full" id="reserveBtn">
+          Confirm Reservation
+        </button>
+        <div id="reserveSuccess" style="display:none;" class="success-msg">
+          ✅ Reservation confirmed! We'll send a reminder to your phone.
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="contact-grid">
+      <div>
+        <p class="section-tag">Find Us</p>
+        <h2>Come Visit</h2>
+        <div class="contact-details">
+          <div class="contact-item">
+            <span>📍</span>
+            <div><strong>Address</strong><p>Westlands Square, Westlands, Nairobi</p></div>
+          </div>
+          <div class="contact-item">
+            <span>🕐</span>
+            <div>
+              <strong>Hours</strong>
+              <p>Mon–Thu: 12pm – 10pm</p>
+              <p>Fri–Sat: 12pm – 12am</p>
+              <p>Sunday: 11am – 9pm</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span>📞</span>
+            <div><strong>Phone</strong><p>+254 700 123 456</p></div>
+          </div>
+          <div class="contact-item">
+            <span>✉️</span>
+            <div><strong>Email</strong><p>hello@savannagrill.co.ke</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="map-placeholder">
+        <span>🗺️</span>
+        <p>Westlands, Nairobi</p>
+        <small>Google Maps integration</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <p class="logo">🌿 Savanna Grill</p>
+        <p>Authentic East African cuisine, Westlands Nairobi.</p>
+      </div>
+      <div>
+        <strong>Quick Links</strong>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#reserve">Reserve</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong>Follow Us</strong>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">TripAdvisor</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Savanna Grill. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // ── HAMBURGER MENU ────────────────────────────────────────────────────────
+    const hamburger = document.getElementById('hamburger');
+    const navLinks  = document.getElementById('navLinks');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('active');
+      });
+    });
+
+    // ── STICKY NAV SHADOW ─────────────────────────────────────────────────────
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // ── MENU TABS ─────────────────────────────────────────────────────────────
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remove active from all tabs and content
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        // Activate clicked tab
+        tab.classList.add('active');
+        document.getElementById(tab.dataset.tab).classList.add('active');
+      });
+    });
+
+    // ── RESERVATION FORM VALIDATION ───────────────────────────────────────────
+    document.getElementById('reserveForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      let valid = true;
+
+      const fields = [
+        { id: 'rName',   errId: 'rNameErr',   msg: 'Please enter your name.',          check: v => v.trim().length >= 2 },
+        { id: 'rPhone',  errId: 'rPhoneErr',  msg: 'Please enter a valid phone number.', check: v => v.trim().length >= 9 },
+        { id: 'rDate',   errId: 'rDateErr',   msg: 'Please select a date.',             check: v => v !== '' },
+        { id: 'rTime',   errId: 'rTimeErr',   msg: 'Please select a time.',             check: v => v !== '' },
+        { id: 'rGuests', errId: 'rGuestsErr', msg: 'Please select number of guests.',   check: v => v !== '' },
+      ];
+
+      // Clear all errors
+      fields.forEach(f => {
+        document.getElementById(f.errId).textContent = '';
+        document.getElementById(f.id).classList.remove('input-error');
+      });
+
+      // Validate each field
+      fields.forEach(f => {
+        const val = document.getElementById(f.id).value;
+        if (!f.check(val)) {
+          document.getElementById(f.errId).textContent = f.msg;
+          document.getElementById(f.id).classList.add('input-error');
+          valid = false;
+        }
+      });
+
+      if (valid) {
+        const btn = document.getElementById('reserveBtn');
+        btn.textContent = 'Confirming...';
+        btn.disabled = true;
+        setTimeout(() => {
+          document.getElementById('reserveForm').style.display = 'none';
+          document.getElementById('reserveSuccess').style.display = 'block';
+        }, 1000);
+      }
+    });
+  </script>
+
+</body>
+</html>
